@@ -1,1 +1,9 @@
 # dummy ci workflow
+name: dummy-ci
+on: push 
+jobs: 
+  init_project:
+    runs-on: ubuntu-latest
+    steps:
+      - name: init
+        run: echo "Initilize the project"
