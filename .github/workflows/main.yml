@@ -14,8 +14,8 @@ jobs:
         run: echo "Initilize the project"
 
       - name: set up Node 18
-      - uses: actions/setup-node@v3
-      - uses: bahmutov/npm-install@HEAD
+        uses: actions/setup-node@v3
+        uses: bahmutov/npm-install@HEAD
         with: 
           node-version: 20
       - run: |
