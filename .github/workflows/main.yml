@@ -1,9 +1,34 @@
 # dummy ci workflow
 name: dummy-ci
-on: push 
+on: 
+  push:
+    branches:
+      - main
+
 jobs: 
   init_project:
+    name: Initialize the project
     runs-on: ubuntu-latest
     steps:
       - name: init
         run: echo "Initilize the project"
+
+      - name: set up Node 18
+      - uses: actions/setup-node@v3
+      - uses: bahmutov/npm-install@HEAD
+        with: 
+          node-version: 20
+        -run: |
+          node --version
+          npm --version
+  
+      - name: test
+        run: echo "command npm run test"
+
+      - name : build 
+        run: echo "command npm run build"
+
+
+
+
+
