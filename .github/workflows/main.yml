@@ -21,7 +21,7 @@ jobs:
       - name: Install Dependencies
         run: |
             pwd
-            cd ../dummmyci
+            cd ../dummyci
             ls -lrt
             npm install --verbose
             node --version
