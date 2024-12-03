@@ -10,8 +10,8 @@ jobs:
     name: Initialize the project
     runs-on: ubuntu-latest
     steps:
-      - name: Initialize
-        run: echo "Initialize the project"
+      - name: Checkout code
+        uses: actions/checkout@v3
 
       - name: Set up Node.js 20
         uses: actions/setup-node@v3
@@ -19,22 +19,10 @@ jobs:
           node-version: 20
 
       - name: Install Dependencies
-        run: |
-            pwd
-            cd ..
-            ls -lrt
-            npm install --verbose
-            node --version
-            npm --version
-            npm list
+        run: npm install --verbose
 
       - name: Test
         run: npm test
 
       - name: Build
         run: npm run build
-
-
-
-
-
