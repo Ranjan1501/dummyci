@@ -18,12 +18,12 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install Dependencies
-        run: |
-        npm install
-        node --version
-        npm --version
-        npm list 
+          - name: Install Dependencies
+          run: |
+            npm install --verbose
+            node --version
+            npm --version
+            npm list
 
       - name: Test
         run: npm test
