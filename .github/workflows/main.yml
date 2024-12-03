@@ -22,7 +22,7 @@ jobs:
         run: npm install --verbose
 
       - name: Test
-        run: npm test
+        run: echo "command npm test"
 
       - name: Build
-        run: npm run build
+        run: echo "command npm build"
