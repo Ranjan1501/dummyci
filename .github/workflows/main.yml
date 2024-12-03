@@ -18,7 +18,7 @@ jobs:
       - uses: bahmutov/npm-install@HEAD
         with: 
           node-version: 20
-        -run: |
+      - run: |
           node --version
           npm --version
   
