@@ -18,8 +18,8 @@ jobs:
         with:
           node-version: 20
 
-          - name: Install Dependencies
-          run: |
+      - name: Install Dependencies
+        run: |
             npm install --verbose
             node --version
             npm --version
