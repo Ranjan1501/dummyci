@@ -31,8 +31,7 @@ jobs:
       - name: Test
         run: |
               echo "Running Test with Jest in watch mode"
-              npx jest --watch
-
+              npm run test -- --watch
       - name: Build
         run: | 
             echo "Running Build with npm"
