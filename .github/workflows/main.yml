@@ -20,19 +20,20 @@ jobs:
 
       - name: Install Dependencies
         run: |
-        npm install --verbose
+             echo "Install NPM Dependecies"
+             npm install --verbose
 
       - name: Code Coverage 
         run: |
-        echo "check code coverage"
-        npm test --coverage
+            echo "check code coverage"
+            npm test --coverage
 
       - name: Test
         run: |
-        echo "Running Test with Jest in watch mode"
-        npx jest --watch
+              echo "Running Test with Jest in watch mode"
+              npx jest --watch
 
       - name: Build
         run: | 
-        echo "Running Build with npm"
-        npm build 
+            echo "Running Build with npm"
+            npm build 
