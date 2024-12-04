@@ -36,4 +36,5 @@ jobs:
       - name: Build
         run: | 
             echo "Running Build with npm"
-            npm build 
+            npm ci --only=production
+            npm run build 
